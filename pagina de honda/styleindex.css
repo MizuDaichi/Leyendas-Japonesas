@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    background-image: url(/imagenes/fondo-otto-azul.jpg);
+    background-position: center;
+    color:#000;
+}
+
+.container-title {
+    position: relative;
+    height: 60dvh;
+    box-sizing: border-box;
+    background-image: radial-gradient(#0064, #0003),url(/imagenes/drift-japoneses.jpg);
+    display: flex;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.Title {
+    position: static;
+    margin: 0;
+    font-size: 70px;
+    text-align: center;
+    text-wrap: balance;
+    color: #000;
+    margin-left: 600px;
+    text-shadow: 0px 2px 15px #fff;
+}
+
+.introduction {
+    display:block;
+    position: absolute;
+}
+.intro {
+    font-size: 30px;
+    text-align: justify;
+    text-shadow: 0px 0px 10px #000;
+    max-width: 900px;
+    min-width: 200px;
+    margin-left: 500px;
+}
+
+.items {
+    display: inline-block;
+    padding: 10px;
+    outline: 0;
+    outline-offset: 0;
+}
+
+a {
+    text-decoration: none;
+    display: grid;
+    color: #fffb;
+}
+
+main {
+    display: grid;
+    justify-content: center;    
+}
+
+.content-main {
+    display: grid;
+    row-gap: 8px;
+    column-gap: 30px;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: repeat(3, 600px);
+    grid-auto-rows: 600px;
+}
+
+.Container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 3fr 1fr;
+    }
+
+.content-aside {
+    display: grid;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 900px;
+    width: 300px;
+}
+
+.item__B16a2 {
+    background-image: url(/imagenes/b16a2.jpg);
+}
+
+.item__B18c1 {
+    background-image: url(/imagenes/b18c1.jpg);
+}
+
+.item__K20a2 {
+    background-image: url(/imagenes/k20a2.jpg);
+}
+
+.item__H22a4 {
+    background-image: url(/imagenes/h22a4.jpg);
+}
+
+.item__2Jz-gte {
+    background-image: url(/imagenes/2jz-gte.jpg);
+}
+
+.item__Rb26dett {
+    background-image: url(/imagenes/RB26DETT-.jpg);
+}
+
+.item__F20c1 {
+    background-image: url(/imagenes/F20c1.jpg);
+}
+
+.item__13b-rew {
+    background-image: url(/imagenes/13b-rew.jpg);
+}
+
+.item__13b-rew, .item__2Jz-gte, .item__B16a2,
+.item__B18c1, .item__F20c1, .item__Rb26dett,
+.item__H22a4, .item__K20a2 {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: transparent;
+    border-radius: 50px;
+    font-size: 40px;
+}
+
+.item__13b-rew:hover, .item__2Jz-gte:hover, .item__B16a2:hover,
+.item__B18c1:hover, .item__F20c1:hover, .item__Rb26dett:hover,
+.item__H22a4:hover, .item__K20a2:hover {
+    color:#000;
+    -webkit-text-stroke: 1px #fff;
+    box-shadow: 0px 0px 12px #000;
+    border: 8px solid #000;
+    transition: box-shadow .6s, color .7s, border .4s;
+}
+
+.list_items {
+    list-style: none;
+    font-size: 25px;
+}
+
+.content-section {
+    display: grid;
+    }
+
+/*style bar nav*/
+
+.bar__nav {
+    background-image: linear-gradient(#33f4, #44f7), url(/imagenes/japoneses-con-bandera.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-position: center;
+    height: 6dvh;
+    padding-inline: 10px;
+}
+
+.list__bar {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.bar__search {
+    display: flex;
+    align-items: center;
+    margin-left: 558px;
+}
+
+.item-home {
+    display:inline-block;
+    text-align: start;
+    padding: 10px;
+    border: 5px solid transparent;
+    margin-right: 900px;
+}
+
+.item-home:hover {
+    border: 6px groove #13e;
+    border-radius: 42%;
+    transition: border .25s, border-radius .40s, background-color .20s;
+    background-color: #00f4;
+    color: #000;
+}
+
+.b__search {
+    font-family: 'Times New Roman';
+    border-radius: 14px;
+    box-shadow: 0px 0px 14px #000;
+    color: #ffb;
+    background-color: #0068;
+}
+
+.b__search:hover {
+    background-color: #0063;
+    color: #ffb;
+}
+
+.i__bar-search {
+    border-radius: 10px;
+    font-family: 'Times New Roman';
+    border: 4px groove #000;
+}
+/*style logo brands*/
+.logo_Aside {
+    width: 100px;
+    height: 90px;
+    background-color: #000;
+    margin: 10px;
+    display: grid;
+}
+
+.logo_Aside:hover {
+    box-shadow: 0px 0px 12px #000;
+    border: 8px solid #000;
+    transition: box-shadow .6s, color .7s, border .4s;
+}
+
+/*aside style*/
+.Brands {
+    font-size: 70px;
+    color:#fffb;
+    text-align: center;
+    margin-right: 80px;
+    text-shadow: 0px 0px 13px #000;
+}
+
+/*style section*/
+.Title_section {
+    font-size: 50px;
+    color: #fffb;
+    text-align: center;
+    text-shadow: 0px 0px 13px #000;
+}
+
+.list-section {
+    list-style: none;
+    font-size: 25px;
+}
+
+.ref-section:hover {
+    color:#48e5;
+    -webkit-text-stroke: 1px #fff;;
+}
