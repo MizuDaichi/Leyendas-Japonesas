@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+}
+
+
+body {
+    margin: auto;
+}
+
+/*style header*/
+.header {
+    background-image: radial-gradient(#0006, #0003), url(/imagenes/integra_gs-r.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.integra_gsr {
+    position: relative;
+    display: block; /* ensure img behaves as block-level element for margin centering */
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    max-width: 90%; /* responsive fallback on small screens */
+    object-fit: cover;
+    
+}
+
+.integra_gsr:hover {
+/*a magnification effect is created*/
+    transform: scale(1.05);
+    border: 5px solid #fff6;
+    box-shadow: 1px 5px 60px #000;
+    transition: border-radius .4s,box-shadow .5s, transform .5s;
+}
+
+.Title {
+    font-family: 'Times New Roman';
+    text-align: center;
+    font-size: 70px;
+    -webkit-text-stroke: 3px #ff87;
+}
+
+.introduction {
+    font-family: 'Times New Roman';
+    text-align: justify;
+    justify-content: center;
+    font-size: 30px;
+    text-wrap: wrap;
+    color: #fffc;
+    width: 60%;
+}
+
+/*style bar nav*/
+.bar__nav {
+    background-image: linear-gradient(#33f4, #44f7), url(/imagenes/japoneses-con-bandera.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-position: center;
+    height: 6dvh;
+    padding-inline: 10px;
+}
+
+.list__bar {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.bar__search {
+    display: flex;
+    align-items: center;
+    margin-left: 558px;
+}
+
+.item-home {
+    display:inline-block;
+    text-align: start;
+    padding: 10px;
+    border: 5px solid transparent;
+    margin-right: 900px;
+}
+
+.item-home:hover {
+    border: 6px groove #13e;
+    border-radius: 42%;
+    transition: border .25s, border-radius .40s, background-color .20s;
+    background-color: #00f4;
+    color: #000;
+}
+
+.b__search {
+    font-family: 'Times New Roman';
+    border-radius: 14px;
+    box-shadow: 0px 0px 14px #000;
+    color: #ffb;
+    background-color: #0068;
+}
+
+.b__search:hover {
+    background-color: #0063;
+}
+
+.i__bar-search {
+    border-radius: 10px;
+    font-family: 'Times New Roman';
+    border: 4px groove #000;
+}
+
+a {
+    color: #fff9;
+    text-decoration: none;
+}
+
+h5 {
+    font-size: 35px;
+    margin: 0;
+}
+
+/*style main*/
+.contain-main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/imagenes/integra_gs-r.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.overlay {
+    background-color: transparent;
+    backdrop-filter: blur(16px);
+    background-image: linear-gradient(#000b, #0009);
+}
+
+.cont-main {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 25px;
+    color: #fffc;
+    text-align: justify;
+    text-wrap: wrap;
+    margin: auto;
+
+}
+
+.subtitle, .title-recomendations, .compatibility, .title-specifications {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
